@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+import 'home_screen.dart';
+
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
 
@@ -13,7 +15,7 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   int _selectedIndex = 0;
   static final List<Widget> _widgetOptions = <Widget>[
-    const Text("Home"),
+    HomeScreen(),
     const Text("Search"),
     const Text("Tickets"),
     const Text("Profile"),
@@ -40,6 +42,7 @@ class _BottomBarState extends State<BottomBar> {
         showUnselectedLabels: true,
         unselectedItemColor: Colors.grey,
         //selectedItemColor: Colors.blueGrey,
+        type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.amber[800],
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
