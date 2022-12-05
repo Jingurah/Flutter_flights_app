@@ -13,14 +13,16 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(children: const [
-                  Text(
-                    "Daths Flights",
-                  ),
-                  Text(
-                    "Book Tickets",
-                  ),
-                ]),
+                Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const [
+                      Text(
+                        "Daths Flights",
+                      ),
+                      Text(
+                        "Book Tickets",
+                      ),
+                    ]),
                 Container(
                   height: 50,
                   width: 50,
